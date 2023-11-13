@@ -1,0 +1,253 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+ 
+
+
+* {
+    padding: 0;
+    margin: 0;
+    width: 99%;
+    box-sizing: border-box;
+    }
+
+:root{
+    --Separadores: rgb(138, 112, 102);
+    --Titulos:rgb(51, 36, 36);
+    --Letra: white;
+    --BgColor: rgb(195, 184, 175);
+}
+
+
+
+body{
+    font-family:'Special Elite';
+    overflow-x: hidden;
+}
+
+.grid-container {
+    padding: -1px;
+    display: grid;
+    background-color:var(--BgColor);    
+    grid-template-areas: 'Header'
+                         'main'
+                         'libros'
+                         'comics'
+                         'BotonesFooter';
+   
+ }
+.Header{
+    position: relative;
+    grid-area: 'Header';
+    height: 11lvh;
+    background-color: var(--Separadores);
+    background-image: url(https://besthqwallpapers.com/Uploads/9-11-2019/110636/thumb2-brown-paper-texture-4k-brown-crumpled-paper-macro-brown-paper.jpg);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    & .logo {
+        
+        
+        & img {
+            height: 5.5em;
+            vertical-align: middle;
+            margin-left: 0.5em;
+            padding: 3px 1px;
+            width: 10vh;}
+   
+        & h2 {
+        font-size: 2.5em;
+        color: var(--Letra);
+        display: inline-block;
+        width: 30vw;}}
+    }
+    .Botones{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 70px;
+        width: 50%;
+        font-size: 17px;
+         & a{
+            text-decoration: none;
+            color: var(--Letra);
+            text-align: center;
+            border-radius: 11px;
+            padding: 8px 13px;
+            margin-bottom: 3px;
+
+         }
+        .Registro{ background-color: var(--Titulos);
+            background-image: url(https://www.todofondos.net/wp-content/uploads/wallpaper-textura-de-papel-de-grunge-scaled.jpg);
+    
+            color: var(--Letra);
+           }
+        }
+
+        & a:hover{
+            color: var(--Titulos); 
+            transform: translate(0,-10%);
+            transition: .5s ease;
+        }
+        .Registro:hover{
+            background-color: var(--Letra);
+            background-image: url(https://plus.unsplash.com/premium_photo-1675695700239-44153e6bf430?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGV4dHVyYSUyMGRlJTIwcGFwZWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+            color: var(--Titulos);
+            transform: translate(0,-10%);
+            transition: .5s ease;
+        }
+
+ 
+
+.Main{grid-area:'main';
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--BgColor);
+    
+
+    
+}
+
+
+.Libros{grid-area:'libros';
+    background-color:var(--BgColor);
+    background-image: url(https://plus.unsplash.com/premium_photo-1675695700239-44153e6bf430?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGV4dHVyYSUyMGRlJTIwcGFwZWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+    height: 76lvh;
+    width: 100%;
+    & h2{
+        text-decoration: none;
+        color: var(--Letra);
+        text-align: center;
+        font-size: 40px;
+        padding-top: 12px;
+        width: 100%;
+        background-image: url(https://besthqwallpapers.com/Uploads/9-11-2019/110636/thumb2-brown-paper-texture-4k-brown-crumpled-paper-macro-brown-paper.jpg);
+        height: 60px ;
+        vertical-align: middle;
+        background-color: var(--Separadores);}
+        & h2:hover{color: var(--Letra);
+            transition: .5s ease;
+    }
+
+    .Carrusel{
+        vertical-align: middle;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        width: 100lvw;
+    }
+
+    .elemento{
+        flex: 1 0 auto;
+        margin: 5lvh 50px;
+        background-color: rgb(255, 255, 255);
+        width: 20lvw;
+        height: 60lvh;
+    }
+
+}
+.Comics{grid-area:'comics';
+    background-color:var(--BgColor);
+    background-image: url(https://plus.unsplash.com/premium_photo-1675695700239-44153e6bf430?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGV4dHVyYSUyMGRlJTIwcGFwZWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+    height: 76lvh;
+    width: 100vw;
+
+    & h2{
+        text-decoration: none;
+        color: var(--Letra);
+        text-align: center;
+        font-size: 40px;
+        padding-top: 12px;
+        width: 100%;
+        background-image: url(https://besthqwallpapers.com/Uploads/9-11-2019/110636/thumb2-brown-paper-texture-4k-brown-crumpled-paper-macro-brown-paper.jpg);
+        height: 60px ;
+        vertical-align: middle;
+        background-color: var(--Separadores);}
+        & h2:hover{color: var(--Letra);
+            transition: .5s ease;
+    }
+
+    .Carrusel{
+        vertical-align: middle;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        width: 100lvw;
+    }
+
+    .elemento{
+        flex: 1 0 auto;
+        margin: 5lvh 50px;
+        background-color: rgb(255, 255, 255);
+        width: 20lvw;
+        height: 60lvh;
+    }
+}
+
+
+.Footer{
+    grid-area:'BotonesFooter';
+    background-color: var(--Separadores);
+    background-image: url(https://besthqwallpapers.com/Uploads/9-11-2019/110636/thumb2-brown-paper-texture-4k-brown-crumpled-paper-macro-brown-paper.jpg);
+    height: 20lvh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+
+    & .BotonesFooter{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 75px 13px;
+        width: 75%;
+        font-size: 17px;
+        & a {
+            text-decoration: none;
+            color: var(--Letra);
+            text-align: center;
+            border-radius: 15px;
+            padding: 20px;
+
+        & a:hover{
+            color: var(--Titulos); 
+            transform: translate(0,-10%);
+            transition: .5s ease;
+        }  
+         }
+        .Registro{ background-color: var(--Titulos);
+            color: var(--Letra);
+            cursor: pointer;
+            animation: bounce 1s linear;
+           }
+        }
+
+    @keyframes bounce {
+        20%,50%,80%,to{
+            transform: translateY(0)
+        }
+        40%{
+            transform: translateY(-30px)
+        }                                   
+        70%{
+            transform: translateY(-15px)
+        }
+        90%{
+            transform: translateY(-4px)
+        }
+    }
+        
+    .Registro:hover{
+        animation: bounce 1s linear;
+    }
+
+        
+
+}
+
+
+
+
+

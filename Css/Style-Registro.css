@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    width: 99%;
+    box-sizing: border-box;
+}
+
+:root {
+    --Separadores: rgb(33, 33, 37);
+    --Titulos: rgb(55, 54, 65);
+    --Letra: white;
+    --BgColor: rgb(50, 50, 54);
+}
+
+
+
+body {
+    font-family: 'Special Elite';
+}
+
+.grid-container {
+    padding: -1px;
+    display: grid;
+    background-color: var(--BgColor);
+    grid-template-areas: 'Header'
+        'main'
+        'footer';
+
+}
+
+.Header {
+    position: relative;
+    grid-area: 'Header';
+    height: 11lvh;
+    background-color: var(--Separadores);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-image:url(https://img.freepik.com/fotos-premium/papel-arrugado-negro-fondo_61607-497.jpg?size=626&ext=jpg);
+    
+    & .logo {
+
+
+        & img {
+            height: 5.5em;
+            vertical-align: middle;
+            margin-left: 0.5em;
+            padding: 3px 1px;
+            width: 10vh;
+            filter: saturate(30%);
+        }
+
+        & h2 {
+            font-size: 2.5em;
+            color: var(--Letra);
+            display: inline-block;
+            width: 30vw;
+        }
+    }
+}
+
+.Botones {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+    width: 50%;
+    font-size: 17px;
+
+    & a {
+        text-decoration: none;
+        color: var(--Letra);
+        text-align: center;
+        border-radius: 11px;
+        padding: 8px 13px;
+        margin-bottom: 3px;
+
+    }
+
+    .Registro {
+        background-color: var(--Titulos);
+        color: var(--Letra);
+    }
+}
+
+& a:hover {
+    color: var(--Titulos);
+    transform: translate(0, -10%);
+    transition: .5s ease;
+}
+
+.Registro:hover {
+    background-color: var(--Letra);
+    color: var(--Titulos);
+    transform: translate(0, -10%);
+    transition: .5s ease;
+}
+
+form{
+
+    text-align: center;
+    padding: 30%;
+
+    & p { margin: 5px}
+  & a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px 50px;
+    border-radius: 5px;}
+
+}
+
+.form {
+padding: 5px;
+ 
+
+}
+
+h3{
+    padding: 10px;
+}
+
+
+
+.Main {
+    grid-area: 'main';
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--BgColor);
+
+
+
+}
+
+
+.Footer {
+    grid-area: 'footer';
+    background-color: var(--Separadores);
+    height: 20lvh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    background-image:url(https://img.freepik.com/fotos-premium/papel-arrugado-negro-fondo_61607-497.jpg?size=626&ext=jpg);
+
+    .BotonesFooter {
+        display: flex;
+        justify-content: space-between;
+        padding: 75px 13px;
+        width: 75%;
+        font-size: 17px;
+
+        & a {
+            text-decoration: none;
+            color: var(--Letra);
+            text-align: center;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .Registro {
+            background-color: var(--Titulos);
+            color: var(--Letra);
+        }
+    }
+
+    & a:hover {
+        color: var(--Titulos);
+        transform: translate(0, -10%);
+        transition: .5s ease;
+    }
+
+    .Registro:hover {
+        background-color: var(--Letra);
+        color: var(--Titulos);
+        transform: translate(0, -10%);
+        transition: .5s ease;
+    }
+
+}
