@@ -35,7 +35,7 @@ Desde Home puedes acceder al catalogo y seleccionar el contenido que deseas ver,
 
 
 ## Contacto
-Si tienes preguntas o sugerencias, puedes contactarnos en nattadeobb@gmail.com
+Si tienes preguntas o sugerencias, puedes contactarnos en mattadeobb@gmail.com
 
 ## Agradecimientos
 Agradecimientos a Sebastian Gauna por ayudarme a entender el funcionamiento de las API
