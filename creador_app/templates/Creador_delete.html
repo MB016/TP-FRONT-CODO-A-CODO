@@ -1,0 +1,49 @@
+{% load static %}
+{% block content %}
+
+<main>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static './css/style1.css' %}" />
+  <title>Segunda Parte Django</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img class="img" src="{% static './Assets/img/Logo 2.png' %}" width="60" height="54" alt="">
+      <h1 class="slogan">Cafe y tinta</h1>
+    </div>
+
+    <nav role="search">
+      <a class="link" href="{% url 'creador:all' %}">Modo Creador</a>
+      <a class="link" href="{% url 'index' %}">Volver al inicio</a>
+    </nav>
+  </header>
+
+<main>
+  <div class="Body_Create">
+    <h2>Estas seguro que deseas borrar este libro? Una vez borrado no podras recuperar</h2>
+    <h2>" {{creador.nombre}} "</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{form.as_p}}
+      <input type="submit" value="{{ tipo }}" />
+    </form>
+
+    <a class="link" href="{% url 'creador:all' %}">Cancelar</a>
+  </div>
+</main>
+<footer>
+  <nav role="search">
+    <a class="link" href="">Home</a>
+    <a class="link" href="">Contacto</a>
+    <a class="link" href="">Productos</a>
+  </nav>
+</footer>
+{% endblock %}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+    font-family:'Special Elite';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{text-decoration: none;
+color: white;}
+
+header {
+    background-image: url(https://us.123rf.com/450wm/gangiskhan/gangiskhan1604/gangiskhan160400477/55388217-libros-de-la-vendimia-en-el-fondo-de-la-biblioteca.jpg?ver=6);
+    min-height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.form {
+    margin-left: 70%;
+    
+}
+
+.slogan {
+    font-size: large;
+    font-weight: 100;
+    margin-left: 5px;
+    color:white;
+}
+
+.link {
+    text-decoration: none;
+    font-size: large;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    background-image: url(https://plus.unsplash.com/premium_photo-1675695700239-44153e6bf430?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGV4dHVyYSUyMGRlJTIwcGFwZWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+
+    padding: 10px;
+    margin-right: 5px;
+    transition: .5s ease;
+    border-radius: 10px;
+}
+
+.search {
+
+    border-radius: 5px;
+
+}
+
+.button {
+
+    background-color: rgb(255, 255, 255);
+    width: 90px;
+    border-radius: 5px;
+}
+
+& .link:hover {
+    border-bottom: 5px solid white;
+    background-image: url(https://www.todofondos.net/wp-content/uploads/wallpaper-textura-de-papel-de-grunge-scaled.jpg);
+    padding: 15px;
+    transform: translate(0, -10%);
+    transition: .5s ease;
+    border-radius: 10px;
+}
+
+
+main{
+    text-align: center;
+    background-color: rgb(172, 150, 123);
+}
+
+
+
+footer {
+    height: 6vh;
+    background-image: url(https://us.123rf.com/450wm/gangiskhan/gangiskhan1604/gangiskhan160400477/55388217-libros-de-la-vendimia-en-el-fondo-de-la-biblioteca.jpg?ver=6);
+    text-align: center;
+    padding: 10px;
+
+
+
+
+
+
+    .link {
+        text-decoration: none;
+        font-size: large;
+        font-weight: 200;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 15px;
+        transition: .5s ease;
+    }
+
+
+    .link:hover {
+        border-top: 5px solid white;
+        background-color: rgb(202, 182, 170);
+        padding: 10px;
+        color: white;
+        transform: translate(0, -10%);
+        transition: .5s ease;
+    }
+
+
+
+}
+.Body_Create{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

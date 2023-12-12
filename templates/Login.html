@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{% static './Css/Style-Registro.css' %}">
+    <title>Cafe y Tinta</title>
+</head>
+
+<body>
+
+    <div class= "grid-container">
+        <div class="Header"> 
+            <div class="logo">
+                <img src="{% static './Assets/img/Logo 2.png' %}" alt="">
+                <h2> Cafe y tinta</h2>
+            </div>
+            <nav class="Botones">
+                <a href=""> Libros</a>
+                <a href="">Comics</a>
+                <a class="Registro" href="{% url 'index' %}"> Volver </a>
+            </nav>
+        </div>
+        <div class="Main"> 
+            <form>
+
+
+        
+                <div class="form">
+                  <label>Email</label><input type="email" name="mail" class="input_data" />
+                </div>
+                <div class="form">
+                  <label>Nombre</label><input type="text" name="nombre" class="input_data" />
+                </div>
+                <div class="form">
+                  <label>Contraseña</label>
+                  <input type="password" name="contraseña" class="input_data" />
+                </div>
+                <button type="submit">Iniciar Sesion</button>
+
+                <h3>¿No tienes una cuenta?</h3>
+              <p>Registrate!!!</p>
+              <a href="{% url 'Registro' %}">UNITE!</a>
+              <script src="{% static './Js/jv.js' %}"></script>
+              </form>
+
+              
+          
+        </div>
+        <div class="Footer">
+            <nav class="BotonesFooter">
+                <a href=""> Libros</a>
+                <a href="">Comics</a>              
+                <a class="Registro" href="{% url 'index' %}"> Volver</a>
+            </nav>
+        </div>
+
+
+    </div>
+    <footer>
+        <section class=""></section>
+    </footer>
+
+    <script src="{% static '../Js/script.js' %}"></script>
+</body>
+
+</html>

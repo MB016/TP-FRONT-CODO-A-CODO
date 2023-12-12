@@ -1,0 +1,77 @@
+
+{% load static %}
+{% block content %}
+
+<main>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static './css/style1.css' %}" />
+  <title>Segunda Parte Django</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img class="img" src="{% static './Assets/img/Logo 2.png' %}" width="60" height="54" alt="">
+      <h1 class="slogan">Cafe y tinta</h1>
+    </div>
+
+    <nav role="search">
+      <a class="link" href="{% url 'index' %}">Volver al inicio</a>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <br>
+      <h2>Modo Creador</h2>
+      <br>
+      <h2 ><a class="link"href="{% url 'creador:create' %}">Crear un libro</a></h2>
+      <br>
+      <br>
+      <div class="list">
+        {% for creador in creador_list %}
+        <fieldset>
+          <legend>Nombre: {{creador.nombre}}</legend>
+          <ul>
+            <li>Autor : {{creador.autor}}</li>
+            <li>Fecha de creacion : {{creador.creacion}}</li>
+            <li>Puntaje: {{creador.rating}} ⭐ </li>
+            
+          </ul>
+  
+            <div>
+                <label for="">Detalles: </label>
+                <a href="{% url 'creador:detail' creador.id  %}">🟢</a>
+            </div>
+            <div>
+                <label for="">Borrar: </label>
+                <a href="{% url 'creador:delete' creador.id %}">❌</a>
+            </div>
+            <div>
+                <label for="">Editar: </label>
+                <a href="{% url 'creador:update' creador.id %}">📋</a>
+            </div>
+        </fieldset>
+        <br>
+        {% endfor %}
+      </div>
+  
+    </div>
+    
+  </main>
+  <footer>
+    <nav role="search">
+      <a class="link" href="">Home</a>
+      <a class="link" href="">Contacto</a>
+      <a class="link" href="">Productos</a>
+    </nav>
+  </footer>
+
+</body>
+{% endblock %}
