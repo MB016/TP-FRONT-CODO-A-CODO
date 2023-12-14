@@ -143,6 +143,7 @@ footer {
     border: 2px solid;
     overflow: scroll;
     width: 500px;
+    height: 70vh;
 }
 
 legend{
