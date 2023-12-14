@@ -16,7 +16,7 @@ class CreadorBaseView(View):
     template_name = 'Creador.html'
     model = Creador
     fields = '__all__'
-    success_url = reverse_lazy('Creador:all')
+    success_url = reverse_lazy('creador:all')
 
 
 class CreadorListView(CreadorBaseView,ListView):
