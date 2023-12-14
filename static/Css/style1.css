@@ -142,6 +142,7 @@ footer {
     padding: 34px;
     border: 2px solid;
     overflow: scroll;
+    width: 500px;
 }
 
 legend{
