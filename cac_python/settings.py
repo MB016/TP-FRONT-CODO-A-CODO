@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'cac_python.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'gomi2003$default',
+        'USER': 'gomi2003',
+        'PASSWORD': 'cafeytinta123',
+        'HOST': 'gomi2003.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
     }
 }
 
