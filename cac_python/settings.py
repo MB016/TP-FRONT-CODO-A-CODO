@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-x^&^r5)9q1642tih8n_^5a#6%_y$gs$%@3pf(rst9ik(t!wn++
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["gomi2003.pythonanywhere.com"]
 
 CUSTOM_APP = ["creador_app"]
 
